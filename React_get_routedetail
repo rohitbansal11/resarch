@@ -1,0 +1,7 @@
+import { useLocation } from 'react-router-dom'
+
+function HeaderView() {
+  const location = useLocation();
+  console.log(location.pathname);
+  return <span>Path : {location.pathname}</span>
+}
